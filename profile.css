@@ -1,0 +1,179 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1{
+    font-weight: lighter;
+}
+
+.navbar{
+    background-color:#9463FF;
+    height: 60px;
+    width: 100%;
+}
+
+.nav-header{
+    display: inline;
+    margin-left: 25px;
+    line-height: 60px;
+}
+
+ul{
+    list-style-type:none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    opacity:0.9;
+}
+
+ul li a:hover{
+    opacity:1;
+}
+
+.bannerImage{
+    width: 100%;
+    height: 580px;
+    border-right: 20px solid #fff;
+    border-left: 20px solid #fff;
+}
+
+.flexbox{
+    margin : 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+article{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.experience-container{
+    display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-between;margin-top: 30px;
+}
+
+.experience{
+    margin-top: 10px;
+    padding: 20px 45px;
+    background-color: #fbfafa;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 2px #a79f9f;
+    color: #8d8b90;
+    display: flex;
+    line-height: 1.3em;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.experience:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.experience-logo{
+    height: 35px;
+    width: 65px;
+    position: relative;
+    right: 30px;
+}
+
+.about-container{
+    display: flex;
+    margin-left:200px;
+    margin-right: 200px;
+    margin-top: 30px;
+}
+
+.about-items{
+    margin-left:50px;
+}
+
+.about-items-image{
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.fa-facebook-official {
+    font-size: 2em !important;
+    color: #3b5998;
+}
+
+.fa-linkedin {
+    font-size: 2em !important;
+    color: #0077b5;
+}
+
+.fa-instagram {
+    font-size: 2em !important;
+    color:#8a3ab9;
+}
+
+
+.socilamedia{
+    display: inline;
+    margin-left: 15px;
+}
+
+.devicon-angularjs-plain{
+    width:50px;
+    height: 50px;
+}
+
+.skills{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skill-items{
+    width:100px;
+    height: 100px;
+}
+
+@media(max-width:800px){
+    .bannerImage{
+        margin-top: 20px;
+        height: 280px;
+    }
+
+    .experience-container{
+        justify-content: center;
+    }
+
+    .experience{
+        margin-top: 20px;
+    }
+
+    .experience:hover{
+        transform: scale(1.1);
+    }
+
+    .about-container{
+        display: inline-block;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .about-profile{
+        text-align: center;
+    }
+
+    .skills{
+        margin-top: 10px;
+    }
+
+    .skills-icons{
+        margin-top:20px;
+    }
+}
